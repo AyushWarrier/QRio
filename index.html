@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>QRio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">QRio</div>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="left">
+        <h2>Generate QR</h2>
+        <input type="text" id="urlInput" placeholder="Enter URL..." />
+        <button id="generate">Generate</button>
+      </div>
+      <div class="right">
+        <div id="qrBox">
+          <div class="placeholder">
+            <div class="qrIcon">𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃</div>
+            <p>Your QR will appear here</p>
+          </div>
+        </div>
+        <button id="downloadBtn" disabled>Download PNG</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Created by 
+    <a href="https://github.com/AyushWarrier/" target="_blank">
+      Ayush Warrier
+    </a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
